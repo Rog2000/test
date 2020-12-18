@@ -1,0 +1,30 @@
+header{
+    font-size: 16px;
+    height: 150px;
+    background-color: #FFFAFA;
+}
+
+.h2head {
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer{
+    font-size: 16px;
+    height: 150px;
+    background-color: #C0C0C0;
+}
+
+@media (max-width: 1250px) {
+    /* это будет показано при разрешении монитора до 1024 пикселей */
+    .h2head {
+        font-size: 15px;
+    }
+
+
+
+
+}
+
+
+

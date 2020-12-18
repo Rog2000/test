@@ -1,0 +1,149 @@
+@import url("headfoo.css") screen;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;
+    margin:0 auto;
+    overflow-y:scroll;
+    background-color: #DCDCDC;
+    min-height: 100vh;
+    height: 100%;
+}
+
+#content{
+    background-color: #F0F8FF;
+    padding: 0 10px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.button7 {
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+}
+.button7:hover { background: rgb(53, 167, 110); }
+.button7:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.flex-container {
+    display: flex; /* flex || inline-flex */
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+
+}
+
+#quickorderfon{
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    padding-top: 5px;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.forms{
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    top:0;
+    padding-top: 5px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.tut{
+    width: 100%;
+    height: 300px;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    text-align: left;
+    border: 2px solid #B0C4DE;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.quickorderkrest{
+    float: right;
+    position: relative;
+    top: 1px;
+    right: 1px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.quickorderkrest:hover{
+    transform: scale(1.05);
+}
+
+.check-block{
+    margin-bottom: 10px;
+}
+
+.control-label{
+    display: inline-block;
+    width: 130px;
+}
+.control-label span{
+    color: red;
+}
+
+.form-control{
+    width: 200px;
+}
+
+#settings{
+    display: none;
+    position: absolute;
+    z-index: 20;
+}
+
+
+
+@media (max-width: 1250px) {
+    /* это будет показано при разрешении монитора до 1024 пикселей */
+    body {
+        width: 100%;
+    }
+
+    .videoblock p{
+        font-size: 12px;
+    }
+
+    .videoblock_img {
+        width: 100%;
+    }
+
+    .sproutvideo-playlist{
+        min-height: 250px;
+    }
+
+
+
+
+}
